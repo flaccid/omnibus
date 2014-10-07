@@ -443,8 +443,8 @@ module Omnibus
               {
                 "CC" => "xlc_r -q64",
                 "CXX" => "xlC_r -q64",
-                "CFLAGS" => "-qlanglvl=extc99 -q64 -I#{install_dir}/embedded/include -O",
-                "CXXFLAGS" => "-qlanglvl=extc99 -q64 -I#{install_dir}/embedded/include -O",
+                "CFLAGS" => "-qlanglvl=extc99 -I#{install_dir}/embedded/include -O",
+                "CXXFLAGS" => "-q64 -I#{install_dir}/embedded/include -O",
                 "LDFLAGS" => "-q64 -L#{install_dir}/embedded/lib -Wl,-blibpath:#{install_dir}/embedded/lib:/usr/lib:/lib",
               }
             end
